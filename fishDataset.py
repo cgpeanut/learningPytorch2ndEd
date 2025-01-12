@@ -21,7 +21,7 @@ print(fish_data.head())
 
 # Convert the dataset to a tensor, excluding the label column (assuming the last column is the label
 
-#fish_tensor = torch.tensor(fish_data.iloc[:, :-1].values, dtype=torch.float32)
+fish_tensor = torch.tensor(fish_data.iloc[:, :-1].values, dtype=torch.float32)
 
 # Show the shape of the tensor
 print(f"Shape of the fish tensor: {fish_tensor.shape}")
